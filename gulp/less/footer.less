@@ -1,0 +1,102 @@
+@import "vars";
+
+
+/* footer */
+
+.footer {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 0 0 10px 0;
+    background: @color-primary;
+
+    &__up-line {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 5px;
+        background: @color-fifth;
+    }
+
+    &__body {
+        width: 100%;
+        //height: 225px;
+
+        .registration-footer,
+        .menu-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__title {
+                margin: 0;
+                width: 270px;
+                height: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: @color-text-secondary;
+                background: @color-fifth;
+                font-size: 24px;
+                text-transform: uppercase;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+
+            &__wrap-link {
+                width: 250px;
+                height: 180px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .registration-footer__link,
+                .menu-footer__link {
+                    line-height: 2;
+                    font-size: 17px;
+                    text-align: right;
+                    color: @color-text-secondary;
+                    text-decoration: underline;
+                }
+            }
+
+            .menu-footer__wrap-link {
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            ._second-column {
+                margin-top: 45px;
+                width: 210px;
+                height: 110px;
+            }
+        }
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+
+        &__img {
+            margin-top: -60px;
+            width: 165px;
+            height: 155px;
+        }
+    }
+
+    &__down-line {
+        margin: 20px 0 0 0;
+        width: 100%;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: @color-fifth;
+
+        .copyright {
+            margin: 0;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: @color-text-secondary;
+        }
+    }
+}
