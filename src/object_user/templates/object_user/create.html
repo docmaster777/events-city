@@ -1,10 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Последние события{% endblock %}
+{% block description %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <div class="row">
+                    <div class="col-12">
+                        <!--Заголовок-->
+                        <div class="form-group">
+                            <div class="col-12">
+                                {{ form.title.label_tag }}
+                                {{ form.title }}
+
+                                {% if form.title.errors %}
+                                <div class="alert alert-danger mt-1">
+                                    {{ form.title.errors }}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <!--site-->
+                        <div class="form-group">
+                            <div class="col-12">
+                                {{ form.site.label_tag }}
+                                {{ form.site }}
+
+                                {% if form.site.errors %}
+                                <div class="alert alert-danger mt-1">
+                                    {{ form.site.errors }}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <!--email-->
+                        <div class="form-group">
+                            <div class="col-12">
+                                {{ form.email.label_tag }}
+                                {{ form.email }}
+
+                                {% if form.email.errors %}
+                                <div class="alert alert-danger mt-1">
+                                    {{ form.email.errors }}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <!--Телефон-->
+                        <div class="form-group">
+                            <div class="col-12">
+                                {{ form.phone.label_tag }}
+                                {{ form.phone }}
+
+                                {% if form.phone.errors %}
+                                <div class="alert alert-danger mt-1">
+                                    {{ form.phone.errors }}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <!--Адрес-->
+                        <div class="form-group">
+                            <div class="col-12">
+                                {{ form.address.label_tag }}
+                                {{ form.address }}
+
+                                {% if form.address.errors %}
+                                <div class="alert alert-danger mt-1">
+                                    {{ form.address.errors }}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <!--Дополнительная информация-->
+                        <div class="form-group">
+                            <div class="col-12">
+                                {{ form.information.label_tag }}
+                                {{ form.information }}
+
+                                {% if form.information.errors %}
+                                <div class="alert alert-danger mt-1">
+                                    {{ form.information.errors }}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <!--Время работы-->
+                        <div class="form-group">
+                            <div class="col-12">
+                                {{ form.working_hours.label_tag }}
+                                {{ form.working_hours }}
+
+                                {% if form.working_hours.errors %}
+                                <div class="alert alert-danger mt-1">
+                                    {{ form.working_hours.errors }}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <!--Описание-->
+                        <div class="form-group">
+                            <div class="col-12">
+                                {{ form.description.label_tag }}
+                                {{ form.description }}
+
+                                {% if form.description.errors %}
+                                <div class="alert alert-danger mt-1">
+                                    {{ form.description.errors }}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <!--btn сохранить-->
+                        <div class="col-12">
+                            <button type="submit">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

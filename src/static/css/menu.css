@@ -1,0 +1,17 @@
+.menu__content {
+  border: 1px solid #FFFB00;
+  padding: 10px;
+}
+.menu__content .item__menu__wrap .item__title {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2px;
+  font-size: 1.1rem;
+  color: #000;
+}
+.menu__content .item__menu__wrap .item__menu a {
+  font-size: 1.1rem;
+  color: #858585;
+}
+.menu__content .item__menu__wrap .item__menu a:hover {
+  color: #000;
+}

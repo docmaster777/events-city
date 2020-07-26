@@ -1,0 +1,14 @@
+.header {
+  border-top: #000 1px solid;
+  border-bottom: #000 1px solid;
+  background: #FFFB00;
+}
+.wrap__header__profile {
+  width: 255px;
+}
+.wrap__header__profile .profile .profile__icon {
+  margin: -3px 0 0 0;
+}
+.wrap__header__profile .profile .profile__title {
+  padding: 0 0 0 0;
+}
