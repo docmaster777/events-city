@@ -84,8 +84,8 @@ DATABASES = {
     # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'events-city',
-        'USER': 'admin',
+        'NAME': 'events_city',
+        'USER': 'postgres',
         'PASSWORD': 'v24061989',
         'HOST': 'localhost',
         'PORT': '5432',
@@ -132,3 +132,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+LOGOUT_REDIRECT_URL = '/'

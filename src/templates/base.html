@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <!-- /select2 -->
     <link rel="stylesheet" href="{% static 'libs/bootstrap/css/bootstrap.min.css' %}" />
+        <!-- Materialize -->
+    <link href="{% static 'libs/materialize/css/materialize.min.css' %}" rel="stylesheet" />
+    <!-- /Materialize -->
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
 </head>
 <body>
@@ -25,12 +28,14 @@
     {% include 'footer.html' %}
 </div>
 
-<script src="{% static 'libs/autocomplete.js' %}"></script>
 <script src="{% static 'libs/jquery.min.js' %}"></script>
 <script src="{% static 'libs/bootstrap/js/bootstrap.min.js' %}"></script>
 <!-- select2 -->
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 <!-- /select2 -->
+<!-- Materialize -->
+<script src="{% static 'libs/materialize/js/materialize.min.js' %}"></script>
+<!-- /Materialize -->
 
 <script src="{% static 'js/main.js' %}"></script>
 {% block footer_script %}

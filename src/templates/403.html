@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}{% endblock %}
+{% block description %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-6">Доступ запрещён. <a href="{% url 'sign_in' %}"><b>Авторизируйтесь в системе</b></a></div>
+    </div>
+</div>
+{% endblock %}

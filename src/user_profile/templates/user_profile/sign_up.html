@@ -6,11 +6,10 @@
 <div class="container mt-4">
     <div class="row">
         <div class="col-6">
-            <div class="mb-2 title__section">Вход в личный кабинет</div>
-            <form action="" method="post">
+            <div class="mb-2 title__section">Регистрация</div>
+            <form action="" method="post">{% csrf_token %}
                 {{ form.as_p }}
-                {% csrf_token %}
-                <input class="waves-effect waves-light btn" type="submit" value="Войти">
+                <input class="waves-effect waves-light btn" type="submit" value="Зарегистрировать">
             </form>
         </div>
     </div>
